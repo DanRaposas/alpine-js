@@ -5,7 +5,12 @@ export default {
     "./src/**/*.{js,css,html}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'alpine-black': '#2C3441',
+        'alpine-blue': '#78C1D2',
+      },
+    },
   },
   plugins: [],
 }
