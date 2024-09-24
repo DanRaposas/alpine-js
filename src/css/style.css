@@ -13,11 +13,11 @@
 }
 
 .nav {
-    @apply w-full p-5 bg-gray-100 flex flex-row justify-center items-center;
+    @apply w-full p-5 bg-gray-100 dark:bg-gray-800 flex flex-row justify-center items-center;
 }
 
 .alpine-logo {
-    @apply size-5 cursor-pointer fill-alpine-black;
+    @apply size-5 cursor-pointer fill-alpine-black dark:fill-gray-100;
 }
 
 .modal-wrapper {
@@ -25,19 +25,23 @@
 }
 
 .modal {
-    @apply w-1/4 h-fit px-5 py-3 bg-gray-200 rounded-md shadow-2xl flex flex-col justify-center items-center gap-2 overflow-auto;
+    @apply w-4/5 md:w-2/3 xl:w-1/3 2xl:w-1/4 h-fit px-5 py-3 bg-gray-200 dark:bg-gray-700 rounded-md shadow-2xl flex flex-col justify-center items-center gap-2 overflow-auto;
 }
 
 .modal-title {
-    @apply w-full font-bold text-xl flex flex-row justify-between items-center;
+    @apply w-full dark:text-gray-100 font-bold text-xl flex flex-row justify-between items-center;
 }
 
 .modal-buttons {
+    @apply w-4/5 sm:w-1/2 md:w-4/12 lg:w-3/12 xl:w-2/12 text-2xl;
+}
+
+.action-buttons {
     @apply w-full flex flex-row justify-center items-center gap-2;
 }
 
 .light-badge {
-    @apply px-2 py-1 bg-gray-400 bg-opacity-40 rounded-md font-mono;
+    @apply px-2 py-1 bg-gray-400 dark:bg-gray-100 bg-opacity-40 rounded-md font-mono;
 }
 
 .alpine-directives {
@@ -45,21 +49,29 @@
 }
 
 .gray-btn {
-    @apply px-2 py-1 font-bold text-gray-100 bg-gray-400 rounded-md select-none transition-all hover:bg-gray-500 active:bg-gray-600;
+    @apply px-2 py-1 font-semibold text-gray-100 dark:text-gray-800 bg-gray-400 dark:bg-gray-200 rounded-md select-none transition-all hover:bg-gray-500 dark:hover:bg-gray-400 active:bg-gray-600 dark:active:bg-gray-500;
 }
 
 .green-btn {
-    @apply px-2 py-1 font-bold text-gray-100 bg-green-500 rounded-md select-none transition-all hover:bg-green-600 active:bg-green-700;
+    @apply px-2 py-1 font-semibold text-gray-100 bg-green-500 rounded-md select-none transition-all hover:bg-green-600 active:bg-green-700;
 }
 
 .red-btn {
-    @apply px-2 py-1 font-bold text-gray-100 bg-red-500 rounded-md select-none transition-all hover:bg-red-600 active:bg-red-700;
+    @apply px-2 py-1 font-semibold text-gray-100 bg-red-500 rounded-md select-none transition-all hover:bg-red-600 active:bg-red-700;
 }
 
 .input-field {
     @apply w-full px-2 py-1 rounded-md bg-gray-100 border border-solid border-gray-400;
 }
 
-.long-content {
-    @apply w-full text-center text-xl break-words;
+.xl-long-content {
+    @apply w-full dark:text-gray-100 text-center text-xl break-words;
+}
+
+.xl-short-content {
+    @apply text-xl dark:text-gray-100;
+}
+
+.bold-short-content {
+    @apply font-bold dark:text-gray-100;
 }
